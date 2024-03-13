@@ -1,0 +1,63 @@
+﻿/* Add this CSS to your existing stylesheet or create a new one */
+
+.container {
+    margin: 20px;
+}
+
+.row {
+    margin-bottom: 2px;
+}
+
+.col-3,
+.col-4,
+.col-6 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="button"] {
+    padding: 6px; /* Adjust padding for a smaller size */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 14px; /* Adjust font size for a smaller size */
+}
+
+#sendMessage,
+#clearMessage {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /* Adjust padding for a smaller size */
+}
+
+    #sendMessage:hover,
+    #clearMessage:hover {
+        background-color: #0056b3;
+    }
+
+ul#messagesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: red;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .col-3,
+    .col-4,
+    .col-6 {
+        display: block;
+        width: 100%;
+    }
+}

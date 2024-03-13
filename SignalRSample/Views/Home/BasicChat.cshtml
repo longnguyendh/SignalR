@@ -14,22 +14,23 @@
         </div>
         <div class="row">&nbsp;</div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-3">
                 <input type="button" id="sendMessage" value="Send Message" />
             </div>
+        <div class="col-3">
+            <input type="button" id="clearMessage" value="Clear history messages" />
         </div>
-    <div class="row">
-        <div class="col-12">
-            <hr /> 
         </div>
-    </div>
+    <p style="color:red">If the Receiver is null or empty, we will send a message to all Senders.</p>
     <div class="row">
         <div class="col-6">
             <ul id="messagesList"></ul>
         </div>
     </div>
 
+
 </div>
 
 <script src="~/js/signalr.js"></script>
 <script src="~/js/basicchat.js"></script>
+<link href="~/css/basicchat.css" rel="stylesheet" />

@@ -1,0 +1,66 @@
+﻿/* wwwroot/css/style.css */
+
+div {
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 20%; /* Set the width to 60% */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 20%; /* Set the width to 10% */
+    margin-right:3px;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+ul#messagesList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    ul#messagesList li {
+        margin-bottom: 10px;
+    }
+
+.message {
+    background-color: #fff;
+}
+
+.system-message {
+    color: #dc3545;
+}
+
+/* Styling for the fixed bottom bar */
+.bottom-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-bar input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60%; /* Set the width to 60% */
+}
+

@@ -1,0 +1,23 @@
+﻿<div class="container">
+<h1>SignalR Group Chat</h1>
+
+<div>
+        <input type="text" id="userInput" value="@User.Identity.Name"  placeholder="Enter your name">
+    <input type="text" id="groupInput" placeholder="Enter group name">
+    <button onclick="joinGroup()">Join Group</button>
+    <button onclick="leaveGroup()">Leave Group</button>
+    <div class="bottom-bar">
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send Message</button>
+        <button onclick="clearMessages()">Clear Messages</button>
+    </div>
+    <ul id="messagesList"></ul>
+
+
+
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.11/signalr.min.js"></script>
+    <link href="~/css/groupchat.css" rel="stylesheet" />
+    <script src="~/js/groupchat.js"></script>

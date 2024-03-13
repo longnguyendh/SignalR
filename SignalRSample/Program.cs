@@ -47,10 +47,10 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 app.MapHub<UserHub>("/hubs/userCount");
-app.MapHub<DeathlyHallowsHub>("hubs/deathyhallows");
-app.MapHub<HouseGroupHub>("/hubs/houseGroup");
+app.MapHub<ViewerCounterHub>("hubs/viewerCounter");
 app.MapHub<NotificationHub>("/hubs/notification");
 app.MapHub<BasicChatHub>("/hubs/basicchat");
-app.MapHub<ChatHub>("/hubs/chat");
+app.MapHub<GroupChatHub>("/hubs/chat");
 app.MapHub<OrderHub>("/hubs/order");
+app.MapHub<GroupChatHub>("/hubs/groupchathub");
 app.Run();
